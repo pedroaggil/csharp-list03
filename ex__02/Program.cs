@@ -14,34 +14,28 @@ namespace ex__02
         {
             int n1, n2;
 
-            Console.Write("Digite um número: ");
-            n1 = int.Parse(Console.ReadLine());
-            Console.Write("Digite outro número: ");
-            n2 = int.Parse(Console.ReadLine());
+                Console.Write("Digite um número: ");
+                n1 = int.Parse(Console.ReadLine());
+                Console.Write("Digite outro número: ");
+                n2 = int.Parse(Console.ReadLine());
 
-            if (n2 > n1)
-            {
-                for (int number = n1; number >= n2; number--)
+                if (n1 >= n2)
                 {
-                    if (number % 2 != 0)
+                    for (int i = n1; i >= n2; i--)
                     {
-                        Console.WriteLine(number);
+                        if (i % 2 != 0) { Console.WriteLine(i); }
+                    }
+
+                }
+                else
+                {
+                    for (int i = n2; i >= n1; i--)
+                    {
+                        if (i % 2 != 0) { Console.WriteLine(i); }
                     }
                 }
 
-            } else
-            {
-                for (int number = n1; number <= n2; number--)
-                {
-                    if (number % 2 != 0)
-                    {
-                        Console.WriteLine(number);
-                    }
-                }
-
-            }
-
-            Console.ReadKey();
+Console.ReadKey();
         }
     }
 }
