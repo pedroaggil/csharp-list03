@@ -22,6 +22,23 @@ namespace ex__05
 
 				array[i] = number;
             }
+            if (i > 0)
+            {
+                int more = array[0];
+
+                for (int n = 0; n <= 14; n++)
+                {
+                    if (more > array[n])
+                    {
+                        more = array[n];
+                    }
+                }
+            } else
+            {
+                Console.WriteLine("Nenhum valor foi digitado.");
+            }
+
+            Console.WriteLine("O maior número informado é {0}.", more);
 
             Console.ReadKey();
         }
