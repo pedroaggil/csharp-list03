@@ -1,4 +1,4 @@
-﻿// System issues
+﻿// Escreva um programa que calcule o fatorial de um número informado pelo usuário
 
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,19 @@ namespace ex__08
     {
         static void main(string[] args)
         {
-            // Code...
+            int res = 1;
+
+            Console.Write("Digite um número para que seja calculado o seu fatorial: ");
+            int number = int.Parse(Console.ReadLine());
+
+            Console.Write("{0}! =", number);
+   
+            for (int i = 2; i <= number; i++) {
+                res = res * i;
+                Console.Write("* {0} ", i);
+            }
+
+            Console.Write("= {0}", res);
 
             Console.ReadKey();
         }
