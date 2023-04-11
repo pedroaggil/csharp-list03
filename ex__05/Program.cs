@@ -13,9 +13,9 @@ namespace ex__05
         static void main(string[] args)
         {
 			int[] array = new int[15];
-			int number;
+			int number, i, more;
 
-            for (int i = 0; i <= 14; i++)
+            for (i = 0; i <= 14; i++)
             {
 				Console.WriteLine("Digite um número: ");
 				number = int.Parse(Console.ReadLine());
@@ -24,9 +24,9 @@ namespace ex__05
             }
             if (i > 0)
             {
-                int more = array[0];
+                more = array[0];
 
-                for (int n = 0; n <= 14; n++)
+                for (int n = 1; n <= 14; n++)
                 {
                     if (more > array[n])
                     {
@@ -38,7 +38,7 @@ namespace ex__05
                 Console.WriteLine("Nenhum valor foi digitado.");
             }
 
-            Console.WriteLine("O maior número informado é {0}.", more);
+            Console.WriteLine("O maior número informado é " + more);
 
             Console.ReadKey();
         }
