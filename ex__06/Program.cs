@@ -1,6 +1,10 @@
 ﻿// System issues
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ex__06
 {
@@ -9,6 +13,8 @@ namespace ex__06
         static void main(string[] args)
         {
             // Code...
+
+            Console.ReadKey();
         }
     }
 }
