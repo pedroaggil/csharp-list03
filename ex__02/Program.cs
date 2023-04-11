@@ -21,7 +21,7 @@ namespace ex__02
 
             if (n2 > n1)
             {
-                for (int number = n1; number <= n2; number++)
+                for (int number = n1; number >= n2; number--)
                 {
                     if (number % 2 != 0)
                     {
@@ -31,7 +31,7 @@ namespace ex__02
 
             } else
             {
-                for (int number = n1; number >= n2; number++)
+                for (int number = n1; number <= n2; number--)
                 {
                     if (number % 2 != 0)
                     {
